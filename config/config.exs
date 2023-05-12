@@ -18,7 +18,9 @@ config :facilita_case, FacilitaCaseWeb.Endpoint,
     layout: false
   ],
   pubsub_server: FacilitaCase.PubSub,
-  live_view: [signing_salt: "UCQIABvP"]
+  live_view: [signing_salt: "UCQIABvP"],
+  load_from_system_env: false,
+  load_from_dotenv: ".env"
 
 # Configures the mailer
 #
